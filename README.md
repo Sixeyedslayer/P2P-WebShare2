@@ -45,3 +45,4 @@ The application will start on `http://localhost:5173`.
 4.  **Chunking & Encryption:** The sender reads the file in 64KB chunks. Each chunk is hashed (SHA-256), encrypted with the AES-GCM key, and sent over the WebRTC Data Channel.
 5.  **Decryption & Verification:** The receiver decrypts incoming chunks, verifies the SHA-256 hash to ensure integrity, and acknowledges receipt (for auto-resume support).
 6.  **Reassembly:** Once all chunks are verified, the receiver reassembles them and triggers an automatic browser download.
+7. **The URL for the app deployed on vercel:**: https://p2-p-web-share2.vercel.app/
